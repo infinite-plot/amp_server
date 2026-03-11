@@ -75,22 +75,46 @@ sudo systemctl enable docker
 sudo systemctl status docker
 ```
 8. Install Portainer. Once Docker is installed and running, you can install Portainer to manage your Docker containers.
-* Create a Docker volume for Portainer:
+* Make a directory for your compose files
 ```
-docker volume create portainer_data
+mkdir /home/YOURUSERNAME/compose # create compose directory for your compose files
 ```
-* Download and run the Portainer container:
+* Make a directory for portainer
 ```
-docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+mkdir /home/YOURUSERNAME/compose/portainer # create portainer directory
+```
+* Create a compose file for portainer
+```
+sudo nano docker-compose.yml # create compose file
+```
+* Enter this into your compose file:
+```
+services:
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce:sts
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    ports:
+      - 9443:9443
+      - 8000:8000 # Used for Edge Agents, can be removed if not needed
+volumes:
+  portainer_data:
+    name: portainer_data
+networks:
+  default:
+    name: portainer_network
+```
+* Run the portainer docker container
+```
+docker compose up -d # run the portainer container in detached mode
 ```
 * Access Portainer Web UI. Open a web browser and navigate to: https://your-server-ip:9443
 Note: Replace your-server-ip with actual IP Address
 Set up the admin account by following the on-screen prompts.
 9. Setup Glances: light weight at a glance monitoring of system performance
-* Make a directory for your compose files
-```
-mkdir /home/YOURUSERNAME/compose # create compose directory for your compose files
-```
 * Make a directory for glances
 ```
 mkdir /home/YOURUSERNAME/compose/glances # create glances directory
@@ -118,6 +142,7 @@ services:
 ```
 docker compose up -d # run the glances container in detached mode
 ```
+* Access Glances Web UI. Open a web browser and navigate to: https://your-server-ip:61208
 10. Setup ufw firewall. We're going to allow the ports for the services we're going to use, and deny everything else.
 ```
 sudo apt install -y ufw
