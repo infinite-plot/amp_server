@@ -3,16 +3,17 @@ Prerequisites:
 * Docker installed and running on your Linux machine.
 
 1. Log in to the Cloudflare Zero Trust Dashboard via your PC
-2. Navigate to the Cloudflare Zero Trust Dashboard and go to Networks > Tunnels.
+2. **IMPORTANT: you must setup security groups to control who accesses your services. DO NOT open them up to the whole world. Instead, leverage the Google identity service to force users to login using their google ID.**
+3. Navigate to the Cloudflare Zero Trust Dashboard and go to Networks > Tunnels.
     * Create a New Tunnel
     * Click the Create a tunnel button.
     * Select Cloudflared as the connector type and click Next.
     * Enter a name for your tunnel (e.g., home-server) and click Save tunnel.
-3. Obtain the tunnel token
+4. Obtain the tunnel token
     * On the next screen, select Docker as your environment installation method.
     * Cloudflare will display a specific docker run command with your unique tunnel token (e.g., docker run cloudflare/cloudflared:latest tunnel run --token <YOUR_TOKEN>).
     * Copy this token.
-4. Compose the Docker Container for Cloudflared
+5. Compose the Docker Container for Cloudflared
     * Create a folder with a compose file as in the previous steps, this time for cloudflared
     * Enter the below into the compose file
 ```
@@ -43,4 +44,5 @@ sudo docker compose up -d
 6. Go to the Public Hostnames tab.
     * Click Add a public hostname.
     * Specify a Subdomain (e.g., nas), select your Domain, define the Service Type (e.g., HTTP), and enter the internal URL of your service (e.g., http://localhost:5000).
+    * You can this for all the services you want to remotely access, such as AMP and Glances to monitor your server remotely.
     * Click Save hostname.
