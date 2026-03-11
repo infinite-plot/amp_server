@@ -23,3 +23,5 @@ services:
 2. Run playit with this command
 ```
 sudo docker compose up -d
+```
+3. After installation, follow the instructions to setup an agent in the playit.gg dashboard. 
