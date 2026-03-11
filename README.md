@@ -5,7 +5,7 @@ Topics covered will include:
 Hardware selection  
 Debian OS installation  
 Network security  
-Remote management  
+Mount NAS (OPTIONAL)
 AMP setup  
-NAS shares  
 Minecraft server setup  
+Remote management  
