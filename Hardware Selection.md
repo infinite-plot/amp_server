@@ -10,7 +10,8 @@ Lenovo 920s (8500 or above)
 The cheapest units are no SSD and no OS units. 
 Assuming you have an old SSD / m.2 drive lying around, these are fantastic choices that you can grab for 130-160 USD.
 
-These are great choices as they have 6 cores, an iGPU, and will run well in headless mode.
+These are great choices as they have 6 cores, an iGPU, and will run well in headless mode (without a GUI).
+Headless is great because you'll use less power (saving money) and use less RAM (with more leftover to run games!
 They are also optimized to run in dusty office environments with minimal care.
 
 Preparation steps should include:  
