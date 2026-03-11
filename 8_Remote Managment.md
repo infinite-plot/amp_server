@@ -3,7 +3,7 @@ Prerequisites:
 * Docker installed and running on your Linux machine.
 
 1. Log in to the Cloudflare Zero Trust Dashboard via your PC
-2. **IMPORTANT: you must setup security groups to control who accesses your services. DO NOT open them up to the whole world. Instead, leverage the Google identity service to force users to login using their google ID.**
+2. **IMPORTANT: you must setup security Policies in ZeroTrust to control who accesses your services. DO NOT open them up to the whole world. Instead, leverage the Google identity service to force users to login using their google ID. Read up on the ZeroTrust documentation if you need more guidance here.**
 3. Navigate to the Cloudflare Zero Trust Dashboard and go to Networks > Tunnels.
     * Create a New Tunnel
     * Click the Create a tunnel button.
