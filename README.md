@@ -3,7 +3,6 @@ Goal: Provide a step by step set of instructions to follow for an AMP server set
 
 Topics covered will include:  
 Hardware selection  
-Hardware preparation
 Debian OS installation  
 Network security  
 Remote management  
