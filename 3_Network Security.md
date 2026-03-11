@@ -81,7 +81,7 @@ mkdir /home/YOURUSERNAME/compose # create compose directory for your compose fil
 ```
 * Make a directory for portainer
 ```
-mkdir /home/YOURUSERNAME/compose/portainer # create portainer directory
+mkdir /home/YOURUSERNAME/compose/portainer # create portainer directory, make sure you are in the portainer directory
 ```
 * Create a compose file for portainer
 ```
@@ -121,7 +121,7 @@ mkdir /home/YOURUSERNAME/compose/glances # create glances directory
 ```
 * Create a compose file for glances
 ```
-sudo nano docker-compose.yml # create compose file
+sudo nano docker-compose.yml # create compose file, make sure you are in the glances directory
 ```
 * Enter and save this:
 ```
@@ -163,3 +163,11 @@ sudo ufw allow from NASIPADDRESS to any port 2049 proto tcp
 sudo ufw --force enable
 ```
 * The goal here is to lock down the NAS to within your internal network. But not to fear. With playit and cloudflared, we'll still be able to manage the server remotely and let friends onto our server.
+11. Setup automatic updates in Debian for security
+```
+sudo apt install unattended-upgrades -y
+```
+* Once installed, enable automatic updates with the following command, which will prompt asking if you want to enable automatic updates. Select Yes and press Enter, which will confirm that the unattended-upgrades service is active and ready to manage updates for you.
+```
+sudo dpkg-reconfigure unattended-upgrades
+```
