@@ -14,19 +14,19 @@ sudo apt install nfs-common
 ```
 * make directory
 ```
-mkdir /mnt/YOURSHAREDFOLDERNAMEHERE
+mkdir /mnt/YOURSHAREDFOLDERNAMEHERE # input your shared folder name
 ```
 * mount the nfs share
 ```
-sudo mount -t nfs YOURNASIPADDRESS:/volume1/YOURSHAREDFOLDERNAMEHERE /mnt/YOURSHAREDFOLDERNAMEHERE
+sudo mount -t nfs YOURNASIPADDRESS:/volume1/YOURSHAREDFOLDERNAMEHERE /mnt/YOURSHAREDFOLDERNAMEHERE # note, this only mounts temporarily
 ```
-* to mount at startup
+* To mount the NAS at startup
 ```
-sudo nano /etc/fstab
+sudo nano /etc/fstab # this is the file we need to update to get the NAS to mount at startup
 ```
 * Enter this into the fstab file, save and exit
 ```
-YOURNASIPADDRESS:/volume1/YOURSHAREDFOLDERNAMEHERE /mnt/YOURSHAREDFOLDERNAMEHERE nfs defaults,_netdev,nofail, 0 0
+YOURNASIPADDRESS:/volume1/YOURSHAREDFOLDERNAMEHERE /mnt/YOURSHAREDFOLDERNAMEHERE nfs defaults,_netdev,nofail, 0 0 # these extra arguments help ensure the server still boots smoothly in the event the server can't access the NAS
 ```
 * Reload mountpoints
 ```
