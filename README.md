@@ -1,4 +1,11 @@
-# Video-Notes
-Hardware Haven Video Notes
+# AMP Server Setup
+Goal: Provide a step by step set of instructions to follow for an AMP server setup.
 
-This is just a repo for me to dump notes, snippets, or whatever else is needed to post alongside videos.  
+Topics covered will include:
+Hardware selection
+Debian OS installation
+Network security
+Remote management
+AMP setup
+NAS shares
+Minecraft server setup
