@@ -2,7 +2,7 @@
 
 **Question: Why put in all this work? What's the value we're getting?**  
 
-**Answer: With these steps, you'll gain enterprise level protection from DDoS and brute forcing hacking attempts. Skip this, and you'll only be able to manage your management services (i.e. glances, AMP, portainer) locally, or port forward and run the risks.**
+**Answer: With these steps, you'll gain enterprise level protection from DDoS and brute forcing hacking attempts. Skip this, and you'll only be able to manage your management services (i.e. glances, AMP) locally, or port forward and run the risks. Be careful exposing portainer, however, unless you really need remote access to its features.**
 
 Prerequisites:
 * A Cloudflare account and an active domain added to your Cloudflare account. 
