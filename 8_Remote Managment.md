@@ -66,8 +66,8 @@ sudo docker compose up -d
     * Create OAuth Credentials - Navigate to: APIs & Services → Credentials
     * Click: Create Credentials → OAuth Client ID
     * Application Type: Web Application
-    * Configure Redirect URI: Cloudflare requires the redirect URI: https://<your-team>.cloudflareaccess.com/cdn-cgi/access/callback
-    * Example: https://joe.cloudflareaccess.com/cdn-cgi/access/callback
+    * Configure Redirect URI: Cloudflare requires the redirect URI: https://<YOURPROJECT>.cloudflareaccess.com/cdn-cgi/access/callback
+    * Example: https://YOURPROJECT.cloudflareaccess.com/cdn-cgi/access/callback
     * Your team domain is visible in: Zero Trust → Settings → General → Team Domain
     * Save Credentials
     * Google will provide: Client ID, Client Secret
