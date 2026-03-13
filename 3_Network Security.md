@@ -30,7 +30,7 @@ sudo nano ~/.ssh/authorized_keys
 * CTRL-X save and exit
 * Now, logout and ssh back in. You'll notice that you no longer need to enter your password (as your windows device is now effectively your password).
 * Once you confirm that this works, you can disable password login. If you have two PCs, it's probably best to repeat this step on a second PC as a backup for login purposes.
-* **NOTE: BE SURE THE CERTIFICATE WORKS OR YOU WILL HAVE TO REINSTALL DEBIAN ON THE SERVER.**
+* **NOTE: You may lock yourself out of remote SSH access; verify key login from a second session before disabling passwords.**
 ```
 sudo nano /etc/ssh/sshd_config
 ```
