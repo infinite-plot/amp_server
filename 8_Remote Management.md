@@ -30,7 +30,7 @@ services:
       - TZ=Europe/Amsterdam # Change this to your timezone
       - TUNNEL_TOKEN=${TOKEN}
     restart: unless-stopped
-    command: tunnel --no-autoupdate run
+    command: tunnel run
     networks:
       - cloudflared
 
