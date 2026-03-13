@@ -2,8 +2,9 @@ Phase 1: Creating the "Isolated" Instance
 1. Create Instance: Select Minecraft Java Edition.
 2. Deployment Settings:
     * Docker Selection: Choose "Use Docker".
-    * If Docker-based instances fail to start, AMP may prompt you to add the amp user to the docker group:
+    * If Docker-based instances fail to start, AMP may prompt you to add the amp user to the docker group, by running this command as root:
       ```
+      sudo su -
       usermod -a -G docker amp
       ```
     * Network Mode: Select "Advanced (Isolated Bridge)". This creates a virtual "cage", separating the server from your Debian host.
