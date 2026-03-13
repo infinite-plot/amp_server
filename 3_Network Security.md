@@ -152,7 +152,6 @@ sudo ufw default allow outgoing
 sudo ufw allow from 192.168.1.0/24 to any port 22    # SSH
 sudo ufw allow from 192.168.1.0/24 to any port 8080  # AMP Web
 sudo ufw allow from 192.168.1.0/24 to any port 9443  # Portainer
-sudo ufw allow from 192.168.1.0/24 to any port 9090  # Cockpit
 sudo ufw allow from 192.168.1.0/24 to any port 61208 # Glances
 ```
 * If you're using a NAS 
