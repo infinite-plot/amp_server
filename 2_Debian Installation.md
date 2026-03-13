@@ -6,7 +6,7 @@
 5. Select Language, Location and Keyboard.
 6. Select the network interface for your wired ethernet connection.  
 7. Give your device a hostname, such as amp-server — if you don't know what to put in domain, you can leave it blank.  
-8. Set root & password, save to your password manager, and make the password SECURE.  
+8. Leave root username and password blank.
 9. Enter a username and password, save to your password manager, and make the password SECURE.  
 10. For partitions, use the entire disk and put all files in one partition.  
 11. For the package manager, just use the defaults and leave proxy blank.  
