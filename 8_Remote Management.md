@@ -31,12 +31,15 @@ services:
     image: cloudflare/cloudflared
     container_name: cloudflared
     environment:
-      - TZ=Europe/Amsterdam # Change this to your timezone
       - TUNNEL_TOKEN=${TOKEN}
     restart: unless-stopped
     command: tunnel run
     networks:
       - cloudflared
+
+networks:
+  cloudflared:
+    name: cloudflared
 ```
 As we don't want the token exposed, we create a .env file in the same directory as your cloudflared compose file:
 ```
