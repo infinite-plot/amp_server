@@ -67,8 +67,8 @@ sudo docker compose up -d
     * Google will provide: Client ID, Client Secret
     * Return to Cloudflare and enter the Client ID, Client Secret
 8. Add Google as an Identity Provider in Cloudflare. 
-    * Go to Cloudflare → Zero Trust Dashboard → Settings → Authentication → Login Methods
-    * Click: Add new → Google
+    * Go to Cloudflare → Zero Trust Dashboard → Settings → Integrations → Identity Providers
+    * Click: Add an identity provider → Google
     * Cloudflare will prompt you for: Client ID, Client Secret from previous step
 9. Restrict emails to allowed Google Accounts
     * Open the Zero Trust Dashboard, then go to: Access → Applications
