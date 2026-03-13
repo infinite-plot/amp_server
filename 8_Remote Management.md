@@ -20,7 +20,11 @@ Prerequisites:
     * Copy this token.
 4. Compose the Docker Container for Cloudflared
     * Create a folder with a compose file as in the previous steps, this time for cloudflared
-    * Enter the below into the compose file
+```
+mkdir cloudflared
+sudo nano docker-compose.yml
+```
+* Enter the below into the compose file
 ```
 services:
   cloudflared:
@@ -33,10 +37,14 @@ services:
     command: tunnel run
     networks:
       - cloudflared
-
-networks:
-  cloudflared:
-    name: cloudflared
+```
+As we don't want the token exposed, we create a .env file in the same directory as your cloudflared compose file:
+```
+sudo nano .env
+```
+In this .env file, place your cloudflared token:
+```
+TOKEN=<Your tunnel token>
 ```
 Make sure you're in the cloudflared directory you just created, then compose the docker file with:
 ```
