@@ -1,6 +1,6 @@
 **If you don't have a domain, skip this step.**
 
-**Question: Why put in all this work? What's the value we're getting?**
+**Question: Why put in all this work? What's the value we're getting?**  
 **Answer: With these steps, you'll gain enterprise level protection from DDoS and brute forcing hacking attempts. Skip this, and you'll only be able to manage your services locally, or port forward and run the risks.**
 
 Prerequisites:
