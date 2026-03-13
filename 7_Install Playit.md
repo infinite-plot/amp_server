@@ -17,7 +17,7 @@ playit-agent --secret abc123xyz456
 2. Create your directory
 ```
 mkdir /home/YOURUSERNAME/compose/playit # create a compose directory for playit
-cd /home/YOURUSERNAME/compose/portainer # make sure you are in the portainer directory
+cd /home/YOURUSERNAME/compose/playit # make sure you are in the portainer directory
 ```
 3. Then, create a compose file:
 ```
