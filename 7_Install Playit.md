@@ -1,6 +1,10 @@
 **Use docker to create playit as an agent within a docker container. This enhances security of the agent.**  
 **Note, you'll need to go to playit.gg and copy your secret key before proceeding.**
-1. Create a directory for playit as in the previous steps. Then, create a compose file:
+1. Create a compose directory for playit as in the previous steps.
+```
+mkdir /home/YOURUSERNAME/compose/playit
+```
+Then, create a compose file:
 ```
 sudo nano docker-compose.yml
 ```
