@@ -1,6 +1,8 @@
-Install AMP with this command:
+**Install AMP**
+Run the following command as root by **using sudo su - first.** DO NOT put sudo in front of the command. DO NOT mistake the letter O for a number when typing the command.
 ```
-run bash <(curl -fsSL getamp.sh)
+sudo su - 
+bash <(wget -qO- getamp.sh)
 ```
 1. Terminal Configuration Wizard
     * System Password: You will be asked for a password for the new Linux system user (usually amp).
