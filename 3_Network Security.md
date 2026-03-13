@@ -47,6 +47,10 @@ PermitRootLogin no
 PasswordAuthentication no
 PubkeyAuthentication yes
 ```
+* Reload the ssh service
+```
+sudo systemctl reload ssh
+```
 4. Protect against brute force attempts with fail2ban
 ```
 sudo apt install fail2ban # limit login attempts
