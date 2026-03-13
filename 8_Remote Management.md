@@ -21,7 +21,7 @@ Prerequisites:
 4. Compose the Docker Container for Cloudflared
     * Create a folder with a compose file as in the previous steps, this time for cloudflared
 ```
-mkdir cloudflared
+mkdir /home/YOURUSERNAME/compose/cloudflared
 sudo nano docker-compose.yml
 ```
 * Enter the below into the compose file
