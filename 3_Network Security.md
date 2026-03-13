@@ -34,7 +34,12 @@ sudo nano ~/.ssh/authorized_keys
 ```
 sudo nano /etc/ssh/sshd_config
 ```
-* Remove password authentication by setting "PasswordAuthentication no". Save and exit.
+* Update the following settings:
+```
+PermitRootLogin no
+PasswordAuthentication no
+PubkeyAuthentication yes
+```
 4. Protect against brute force attempts with fail2ban
 ```
 sudo apt install fail2ban # limit login attempts
