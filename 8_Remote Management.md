@@ -9,7 +9,7 @@ Prerequisites:
 * Docker installed and running on your Linux machine.
 
 1. Create a Zero Trust account. Go into the Cloudflare Zero Trust / Cloudflare One dashboard and make sure your account is initialized. Tunnel and Access live there.
-2. Navigate to the Cloudflare Zero Trust Dashboard and go to Networks > Tunnels.
+2. Navigate to the Cloudflare Zero Trust Dashboard and go to Networks > Connectors > Tunnels.
     * Create a New Tunnel
     * Click the Create a tunnel button.
     * Select Cloudflared as the connector type and click Next.
