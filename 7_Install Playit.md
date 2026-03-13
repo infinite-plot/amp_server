@@ -10,9 +10,9 @@ https://playit.gg/
     * Click Add Agent.
     * Choose Linux / Docker as the installation method.
     * Playit will display a secret agent key. Example:
-```
-playit-agent --secret abc123xyz456
-```
+      ```
+      playit-agent --secret abc123xyz456
+      ```
 2. Create your directory
 ```
 mkdir /home/YOURUSERNAME/compose/playit # create a compose directory for playit
