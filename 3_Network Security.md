@@ -110,7 +110,7 @@ networks:
 ```
 * Run the portainer docker container
 ```
-docker compose up -d # run the portainer container in detached mode
+sudo docker compose up -d # run the portainer container in detached mode
 ```
 * Access Portainer Web UI. Open a web browser and navigate to: https://your-server-ip:9443
 Note: Replace your-server-ip with actual IP Address
@@ -141,7 +141,7 @@ services:
 ```
 * Run the glances docker container
 ```
-docker compose up -d # run the glances container in detached mode
+sudo docker compose up -d # run the glances container in detached mode
 ```
 * Access Glances Web UI. Open a web browser and navigate to: https://your-server-ip:61208
 10. Setup ufw firewall. We're going to allow the ports for the services we're going to use, and deny everything else.
