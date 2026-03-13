@@ -29,7 +29,8 @@ sudo nano ~/.ssh/authorized_keys
 * paste sshkey.pub data that you copied into a new line
 * CTRL-X save and exit
 * Now, logout and ssh back in. You'll notice that you no longer need to enter your password (as your windows device is now effectively your password).
-* Once you confirm that this works, you can disable password login. If you have two PCs, it's probably best to repeat this step on a second PC as a backup for login purposes. NOTE: BE SURE THE CERTIFICATE WORKS OR YOU WILL HAVE TO REINSTALL THE OS.
+* Once you confirm that this works, you can disable password login. If you have two PCs, it's probably best to repeat this step on a second PC as a backup for login purposes.
+* **NOTE: BE SURE THE CERTIFICATE WORKS OR YOU WILL HAVE TO REINSTALL THE OS.**
 ```
 sudo nano /etc/ssh/sshd_config
 ```
