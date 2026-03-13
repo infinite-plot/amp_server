@@ -99,7 +99,8 @@ mkdir /home/YOURUSERNAME/compose # create compose directory for your compose fil
 ```
 * Make a directory for portainer
 ```
-mkdir /home/YOURUSERNAME/compose/portainer # create portainer directory, make sure you are in the portainer directory
+mkdir /home/YOURUSERNAME/compose/portainer # create portainer directory
+cd /home/YOURUSERNAME/compose/portainer # make sure you are in the portainer directory
 ```
 * Create a compose file for portainer
 ```
@@ -136,10 +137,11 @@ Set up the admin account by following the on-screen prompts.
 * Make a directory for glances
 ```
 mkdir /home/YOURUSERNAME/compose/glances # create glances directory
+cd /home/YOURUSERNAME/compose/glances # make sure you are in the glances directory
 ```
 * Create a compose file for glances
 ```
-sudo nano docker-compose.yml # create compose file, make sure you are in the glances directory
+sudo nano docker-compose.yml # create compose file
 ```
 * Enter and save this:
 ```
