@@ -63,7 +63,7 @@ sudo docker compose up -d
     * Application Type: Web Application
     * Name - give this any name you like to identify your OAuth 2.0 client, for instance YOURTEAMNAME Google OAuth 2.0 client
     * Save your team domain to Google's "Authorized JavaScript Origins" in URIs 1. You can get this team domain from Cloudflare. Your team domain is visible in: Zero Trust → Settings → General → Team Domain. For example: https://YOURTEAMNAME.cloudflareaccess.com
-    * Configure Redirect URI: Cloudflare requires the redirect URI: https://YOURPROJECT.cloudflareaccess.com/cdn-cgi/access/callback
+    * Configure Redirect URI: Cloudflare requires the redirect URI: https://YOURTEAMNAME.cloudflareaccess.com/cdn-cgi/access/callback
     * Google will provide: Client ID, Client Secret
     * Return to Cloudflare and enter the Client ID, Client Secret
 8. Add Google as an Identity Provider in Cloudflare. 
