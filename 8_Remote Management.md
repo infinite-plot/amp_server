@@ -33,7 +33,7 @@ services:
     environment:
       - TUNNEL_TOKEN=${TOKEN}
     restart: unless-stopped
-    command: tunnel run
+    command: tunnel --no-autoupdate run
     networks:
       - cloudflared
 
