@@ -17,6 +17,7 @@ ssh-keygen -t ed25519
 ```
 ssh-add sshkey
 ```
+* you'll be prompted to enter your passphrase. Enter it now.
 * open sshkey.pub with notepad. Keep that on hand as you'll need to copy data in a few more steps.
 * log into your server pc via ssh, using command ssh YOURUSERNAME@YOURSERVERIPADDRESS. For example:
 ```
