@@ -46,7 +46,7 @@ Add your Playit secret key:
 ```
 SECRET_KEY=<your_secret_key_here> # Get this from playit.gg dashboard
 ```
-Save and exit
+Save and exit  
 5. Run playit with this command
 ```
 sudo docker compose up -d
