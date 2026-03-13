@@ -12,6 +12,7 @@ sudo apt update && sudo apt full-upgrade -y
 ssh-keygen -t ed25519
 ```
 * Then specifiy path and name e.g. C:\Users\YOURUSERNAME\Downloads/sshkey
+* enter a passphrase and save it to a secure location
 * add private key to ssh agent. Go to the Downloads directory in your Windows Powershell, and use the command ssh-add <private key filename>. In this case:
 ```
 ssh-add sshkey
