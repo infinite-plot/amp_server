@@ -1,5 +1,5 @@
 **Use docker to create playit as an agent within a docker container. This enhances security of the agent.**  
-**Note, you'll need to go to playit.gg and copy your secret key before proceeding.**
+**Note, you'll need to go to playit.gg and copy your secret key before installing the agent.**
 
 1. Sign in to the Playit Dashboard
 ```
