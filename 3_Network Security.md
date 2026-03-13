@@ -16,10 +16,17 @@ ssh-keygen -t ed25519
 ```
 ssh-add sshkey
 ```
-* open sshkey.pub with notepad, copy data
+* open sshkey.pub with notepad. Keep that on hand as you'll need to copy data in a few more steps.
 * log into your server pc via ssh, using command ssh YOURUSERNAME@YOURSERVERIPADDRESS. For example:
 ```
 ssh user@192.168.1.25 # this is an example, you must enter the correct ip address for your server
+```
+* You now need to create the .ssh directory on the server and set permissions:
+```
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+touch ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
 ```
 * Note that you'll have to enter your password. We'll fix that in the next step.
 * Add the ssh key to your authorized keys file.
