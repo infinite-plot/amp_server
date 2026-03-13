@@ -53,12 +53,7 @@ sudo docker compose up -d
     * You can this for all the services you want to remotely access, such as AMP and Glances to monitor your server remotely.
     * Click Save hostname.
 **IMPORTANT: you must setup security Policies in ZeroTrust to control who accesses your services. DO NOT open them up to the whole world. Instead, leverage the Google identity service to force users to login using their google ID.**
-8. Add Google as an Identity Provider. 
-    * Go to Zero Trust Dashboard → Settings → Authentication → Login Methods
-    * Click: Add new → Google
-    * Cloudflare will prompt you for: Client ID, Client Secret
-    * These come from Google Cloud Console.
-9. Create Google OAuth Credentials
+7. Create Google OAuth Credentials
     * Open: https://console.cloud.google.com/
     * Select or create a project.
     * Enable Google Identity APIs - Go to: APIs & Services → Library
@@ -66,13 +61,16 @@ sudo docker compose up -d
     * Create OAuth Credentials - Navigate to: APIs & Services → Credentials
     * Click: Create Credentials → OAuth Client ID
     * Application Type: Web Application
+    * Name - give this any name you like to identify your OAuth 2.0 client, for instance YOURTEAMNAME Google OAuth 2.0 client
+    * Save your team domain to Google's "Authorized JavaScript Origins" in URIs 1. You can get this team domain from Cloudflare. Your team domain is visible in: Zero Trust → Settings → General → Team Domain. For example: https://YOURTEAMNAME.cloudflareaccess.com
     * Configure Redirect URI: Cloudflare requires the redirect URI: https://YOURPROJECT.cloudflareaccess.com/cdn-cgi/access/callback
-    * Example: https://YOURPROJECT.cloudflareaccess.com/cdn-cgi/access/callback
-    * Your team domain is visible in: Zero Trust → Settings → General → Team Domain
-    * Save Credentials
     * Google will provide: Client ID, Client Secret
-    * Return to Cloudflare and enter them.
-10. Restrict emails to allowed Google Accounts
+    * Return to Cloudflare and enter the Client ID, Client Secret
+8. Add Google as an Identity Provider in Cloudflare. 
+    * Go to Cloudflare → Zero Trust Dashboard → Settings → Authentication → Login Methods
+    * Click: Add new → Google
+    * Cloudflare will prompt you for: Client ID, Client Secret from previous step
+9. Restrict emails to allowed Google Accounts
     * Open the Zero Trust Dashboard, then go to: Access → Applications
     * You should already have created the protected application (example: glances.example.com).
     * Click the application.
