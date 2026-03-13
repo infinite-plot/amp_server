@@ -91,6 +91,7 @@ sudo systemctl enable docker
 ```
 sudo systemctl status docker
 ```
+* Note, use sudo docker ... to run docker commands by default. Only add users to the docker group if you understand that it effectively grants root-level access.
 8. Install Portainer. Once Docker is installed and running, you can install Portainer to manage your Docker containers.
 * Make a directory for your compose files
 ```
