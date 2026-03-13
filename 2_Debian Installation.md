@@ -29,4 +29,4 @@ After logging in successfully, you should see a command prompt similar to:
 ```
 username@debian:~$
 ```
-You are now managing the server remotely via SSH.
+You are now managing the server remotely via SSH. You should be able to manage the rest of the installation from your PC. You can now disconnect the monitor and peripherals from your server.
