@@ -42,7 +42,7 @@ networks:
   cloudflared:
     name: cloudflared
 ```
-As we don't want the token exposed, we create a .env file in the same directory as your cloudflared compose file:
+To avoid placing the token directly in the compose file, create a .env file in the same directory. This makes it harder to accidentally expose your Cloudflared token.
 ```
 sudo nano .env
 ```
