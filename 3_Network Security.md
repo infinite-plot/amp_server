@@ -65,7 +65,7 @@ EOF
 
 sudo apt update
 ```
-* Install docker. This is really important, as it boxes in the services into containers for security.
+* Install docker. Docker provides service deployment isolation and convenience.
 ```
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo systemctl start docker
