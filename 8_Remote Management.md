@@ -29,7 +29,7 @@ sudo nano docker-compose.yml
 ```
 services:
   cloudflared:
-    image: cloudflare/cloudflared
+    image: cloudflare/cloudflared:latest
     container_name: cloudflared
     environment:
       - TUNNEL_TOKEN=${TOKEN}
