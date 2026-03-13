@@ -172,7 +172,7 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw allow from 192.168.1.0/24 to any port 22        # SSH
 sudo ufw allow from 192.168.1.0/24 to any port 8080      # AMP Web
-sudo ufw allow from 192.168.1.0/24 to any port 2223/tcp  # AMP SFTP
+sudo ufw allow from 192.168.1.0/24 to any port 2223      # AMP SFTP
 sudo ufw allow from 192.168.1.0/24 to any port 9443      # Portainer
 sudo ufw allow from 192.168.1.0/24 to any port 61208     # Glances
 ```
