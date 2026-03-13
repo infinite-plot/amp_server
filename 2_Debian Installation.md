@@ -10,4 +10,23 @@
 9. Enter a username and password, save to your password manager, and make the password SECURE.  
 10. For partitions, use the entire disk and put all files in one partition.  
 11. For the package manager, just use the defaults and leave proxy blank.  
-12. For software selection, deselect everything except for SSH server and the standard utilities.  
+12. For software selection, deselect everything except for SSH server and the standard utilities.
+13. Confirm your ip address:
+```
+ip a
+``` 
+14. Go to your PC. Open Terminal and enter:
+```
+ssh username@SERVER_IP
+```
+For example:
+```
+ssh joe@192.168.1.50
+```
+You will be prompted for the password you created during installation.
+15. The first time you connect, SSH will ask you to verify the server fingerprint. Type: yes
+After logging in successfully, you should see a command prompt similar to:
+```
+username@debian:~$
+```
+You are now managing the server remotely via SSH.
