@@ -1,14 +1,12 @@
-As of March 2026, there are great deals on ebay for old Dell Optiplex, HP and Lenovo systems.
-
-Top choices include:
-Elitedesk G4 800 (8500 or above)
-Elitedesk G5 800 (9500 or above)
-Dell Optiplex 5060 (8500 or above)
-Dell Optiplex 7070 (9500 or above)
-Lenovo 920s (8500 or above)
+Top choices as of 2026 include
+* Elitedesk G4 800 (8500 or above)
+* Elitedesk G5 800 (9500 or above)
+* Dell Optiplex 5060 (8500 or above)
+* Dell Optiplex 7070 (9500 or above)
+* Lenovo 920s (8500 or above)
 
 The cheapest units are no SSD and no OS units. 
-Assuming you have an old SSD / m.2 drive lying around, these are fantastic choices that you can grab for 130-160 USD.
+Assuming you have an old SSD / m.2 drive lying around, you are good to go.
 
 These are great choices as they have 6 cores, an iGPU, and will run well in headless mode (without a GUI).
 Headless is great because you'll use less power (saving money) and use less RAM (with more leftover to run games).
