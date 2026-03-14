@@ -16,7 +16,7 @@ sudo apt install nfs-common
 ```
 * make directory
 ```
-mkdir /mnt/YOURSHAREDFOLDERNAMEHERE # input your shared folder name
+sudo mkdir /mnt/YOURSHAREDFOLDERNAMEHERE # input your shared folder name
 ```
 * mount the nfs share
 ```
