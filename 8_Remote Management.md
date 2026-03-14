@@ -58,12 +58,12 @@ sudo docker compose up -d
     * After running the command, return to the Cloudflare Zero Trust Dashboard. Your connector should appear as healthy and connected within a few seconds. Click Next to proceed to the configuration step.
     * Configure Public Hostnames (Optional but Recommended)
     * In the dashboard, you can define public hostnames to route traffic through your new tunnel to local services:
-6. Create a Protected Application
-    * Go to the Public Hostnames tab. Click Add a public hostname.
-    * Specify a Subdomain (e.g., glances), select your Domain, define the Service Type (e.g., HTTP), and enter the internal URL of your service (e.g., http://localhost:5000).
+6. Create a Published Application Route
+    * Go to the Published Application Route tab within Network > Connectors > Tunnels. Click Add a published application route.
+    * Specify a Subdomain (e.g., glances), select your Domain, define the Service Type (e.g., HTTP), and enter the internal URL of your service (e.g., http://<yourserverip>:61208).
     * Example: Application name: glances, Domain: glances.example.com
     * You can this for all the services you want to remotely access, such as AMP and Glances to monitor your server remotely.
-    * Click Save hostname.
+    * Click Save.
 **IMPORTANT: you must setup security Policies in ZeroTrust to control who accesses your services. DO NOT open them up to the whole world. Instead, leverage the Google identity service to force users to login using their google ID.**
 7. Create Google OAuth Credentials
     * Open: https://console.cloud.google.com/
