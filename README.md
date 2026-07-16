@@ -10,3 +10,4 @@ Topics covered will include:
 6. Minecraft server setup
 7. Playit.gg setup
 8. Remote management  
+9. Updating your services
