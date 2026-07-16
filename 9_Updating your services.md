@@ -6,9 +6,18 @@ getamp update
 ```
 
 Updating Playit
+You installed Playit via docker. So go to your the folder with Playit's docker-compose.yml file and then type
 ```
-sudo apt update
-sudo apt install --only-upgrade playit
+sudo docker compose down
+sudo docker compose pull
+sudo docker compose up
 ```
 
-Updating 
+ Updating cloudflared
+ You installed cloudflared via docker. So go to your the folder with cloudflared's docker-compose.yml file and then type:
+ ```
+ sudo docker compose down
+ sudo docker compose pull
+ sudo docker compose up
+ ```
+
