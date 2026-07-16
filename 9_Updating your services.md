@@ -1,4 +1,4 @@
-Updating AMP
+1. Updating AMP
 
 Run the following command as root by **using sudo su - first.** DO NOT put sudo in front of the command. DO NOT mistake the letter O for a number when typing the command.
 ```
@@ -7,7 +7,7 @@ getamp update
 ```
 
 
-Updating Playit
+2. Updating Playit
 
 You installed Playit via docker. So go to your the folder with Playit's docker-compose.yml file and then type:
 ```
@@ -16,7 +16,7 @@ sudo docker compose up
 ```
 
 
-Updating cloudflared
+3. Updating cloudflared
  
 You installed cloudflared via docker. So go to your the folder with cloudflared's docker-compose.yml file and then type:
 ```
@@ -25,7 +25,7 @@ sudo docker compose up
 ```
 
 
-Updating Glances
+4. Updating Glances
 
 You installed Glances via docker. So go to your the folder with Glances' docker-compose.yml file and then type:
 ```
@@ -34,7 +34,7 @@ sudo docker compose up
 ```
 
 
-Updating Portainer
+5. Updating Portainer
  
 You installed Portainer via docker. So go to your the folder with Portainer's docker-compose.yml file and then type:
 ```
